@@ -1,23 +1,32 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution surge.list v0.3.0 597223f37324a4b89c4d81a67406afbcd246ad1c
+# anti-ip-attribution surge.list v0.3.1 b325d335c57ee0591d668c5945db1c8f6f9db352
 # https://github.com/lwd-temp/anti-ip-attribution
 # Surge分流规则
+DOMAIN,httpdns.bilivideo.com,REJECT
+IP-CIDR,47.101.175.206/32,REJECT
+IP-CIDR,47.100.123.169/32,REJECT
+IP-CIDR,120.46.169.234/32,REJECT
+IP-CIDR,121.36.72.124/32,REJECT
+IP-CIDR,116.63.10.135/32,REJECT
+IP-CIDR,122.9.7.134/32,REJECT
+IP-CIDR,117.185.228.108/32,REJECT
+IP-CIDR,117.144.238.29/32,REJECT
+IP-CIDR,122.9.13.79/32,REJECT
+IP-CIDR,122.9.15.129/32,REJECT
+IP-CIDR,101.91.140.224/32,REJECT
+IP-CIDR,101.91.140.124/32,REJECT
+IP-CIDR,114.116.215.110/32,REJECT
+IP-CIDR,116.63.10.31/32,REJECT
+IP-CIDR,112.64.218.119/32,REJECT
+IP-CIDR,112.65.200.117/32,REJECT
 DOMAIN-SUFFIX,biliapi.net
-DOMAIN,api.bilibili.com
-DOMAIN,api.bilibili.tv
-DOMAIN,app.bilibili.com
 DOMAIN-SUFFIX,biliapi.com
-DOMAIN,api.live.bilibili.com
-DOMAIN,api.vc.bilibili.com
-DOMAIN,passport.bilibili.com
-DOMAIN,live-trace.bilibili.com
-DOMAIN,message.bilibili.com
-DOMAIN,cm.bilibili.com
 DOMAIN-SUFFIX,bilibili.com
-DOMAIN-SUFFIX,im9.com
-DOMAIN-SUFFIX,acg.tv
-DOMAIN-SUFFIX,biligame.com
-IP-CIDR,203.107.1.0/24,REJECT
+IP-CIDR,203.107.1.0/24
+DOMAIN-SUFFIX,bilivideo.com,DIRECT
+DOMAIN-SUFFIX,akamaized.net,DIRECT
+DOMAIN-SUFFIX,hdslb.com,DIRECT
+DOMAIN-SUFFIX,szbdyd.com,DIRECT
 DOMAIN-SUFFIX,weibo.cn
 DOMAIN-SUFFIX,weibo.com
 DOMAIN-SUFFIX,weibocdn.com
@@ -29,6 +38,12 @@ DOMAIN,fclog.baidu.com
 DOMAIN,gsp0.baidu.com
 DOMAIN,hm.baidu.com
 DOMAIN,www.baidu.com
+DOMAIN,tiebac.baidu.com
+IP-CIDR,180.76.76.0/24
+DOMAIN,httpsdns.baidu.com
+DOMAIN,c.tieba.baidu.com
+DOMAIN,httpdns.baidu.com
+DOMAIN,httpdns.baidubce.com
 DOMAIN,szshort.weixin.qq.com
 DOMAIN,szextshort.weixin.qq.com
 DOMAIN,szminorshort.weixin.qq.com
@@ -43,6 +58,17 @@ DOMAIN-KEYWORD,normal-c-lq
 DOMAIN-KEYWORD,normal-lq
 DOMAIN-KEYWORD,search-quic-lq
 DOMAIN-KEYWORD,search-lq
+DOMAIN-SUFFIX,zijieapi.com,DIRECT
+DOMAIN-SUFFIX,ecombdapi.com,DIRECT
+DOMAIN-KEYWORD,-normal-hl
+DOMAIN-KEYWORD,-normal-c-hl
+DOMAIN-KEYWORD,-core-c-hl
+DOMAIN-KEYWORD,-normal-lf
+DOMAIN-KEYWORD,-normal-c-lf
+DOMAIN-KEYWORD,-core-c-lf
+DOMAIN,sso.douyin.com
+DOMAIN,www.douyin.com
+DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,toutiaoapi.com
 DOMAIN-SUFFIX,gifshow.com
 DOMAIN-SUFFIX,ksapisrv.com
@@ -59,6 +85,8 @@ DOMAIN,god.gameyw.netease.com
 DOMAIN-SUFFIX,huya.com
 DOMAIN-SUFFIX,dongqiudi.com
 DOMAIN,ngabbs.com
+DOMAIN,bbs.nga.cn
+DOMAIN,nga.178.com
 DOMAIN,api.vip.miui.com
 DOMAIN-SUFFIX,music.163.com
 DOMAIN,nstool.netease.com
@@ -100,3 +128,16 @@ DOMAIN-SUFFIX,img.douyucdn.cn,DIRECT
 DOMAIN-SUFFIX,douyucdn.cn
 DOMAIN-SUFFIX,douyu.com
 DOMAIN,bbs-api.mihoyo.com
+DOMAIN,bbs-api.miyoushe.com
+DOMAIN-SUFFIX,douban.com
+IP-CIDR,49.233.242.15/32
+IP-CIDR,81.70.124.99/32
+IP-CIDR,81.70.125.19/32
+IP-CIDR,140.143.177.206/32
+DOMAIN,api.xiaoheihe.cn
+DOMAIN,y.qq.com,DIRECT
+DOMAIN-SUFFIX,y.qq.com
+DOMAIN,zonai.skland.com
+DOMAIN,china-img.soulapp.cn,DIRECT
+DOMAIN,img.soulapp.cn,DIRECT
+DOMAIN-SUFFIX,soulapp.cn
